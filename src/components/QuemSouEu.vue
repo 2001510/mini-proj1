@@ -2,7 +2,7 @@
   <div class="whoiam">
     <div class="wrapper">
       <div class="profile-photo">
-        <img src="../assets/profile.png"/>
+        <img src="../assets/profile.png" alt="profile.png"/>
       </div>
       <div class="profile-info">
         <h1>Saudações,</h1>
@@ -26,64 +26,56 @@
     </div>
   </div>
 </template>
-
 <script>
-export default {
-  name: "QuemSouEu",
-  data() {
-    return{
-      descricao: "Sou Ednilson Dava, atualmente mestrando em Tecnologias e Sistemas Informaticos Web " +
-          "na Universidade Aberta. Tambem trabalho como Docente do Ensino Superior no Instituto Superior" +
-          " Dom Bosco, onde lecciono UCs dos cursos do departamento de TICs."
+  export default {
+    name: "QuemSouEu",
+    data() {
+      return{
+        descricao: "Sou Ednilson Dava, atualmente mestrando em Tecnologias e Sistemas Informaticos Web " +
+            "na Universidade Aberta. Tambem trabalho como Docente do Ensino Superior no Instituto Superior" +
+            " Dom Bosco, onde lecciono UCs dos cursos do departamento de TICs."
+      }
     }
   }
-}
 </script>
-
 <style scoped>
+  .wrapper {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .wrapper > div {
+    display: inline-block;
+    margin-top: 60px;
+  }
+  .profile-photo {
+    margin-right: 90px;
+  }
+  .profile-photo img {
+    width: 380px;
+    height: 350px;
+  }
+  .personal-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+  }
+  .personal-info > div {
+    margin: 30px 0;
+  }
+  .profile-info {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: small;
+  }
+  .profile-info img {
+    width: 48px;
+    padding: 25px;
 
-.wrapper {
-  position: relative;
-  width: 980px;
-  margin: 0 auto;
-  display: flex;
-}
-
-.wrapper > div {
-  display: inline-block;
-  margin-top: 60px;
-}
-
-.profile-photo {
-  margin-right: 90px;
-}
-
-.profile-photo img {
-  width: 380px;
-  height: 350px;
-}
-.personal-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  font-weight: bold;
-}
-
-.personal-info > div {
-  margin: 30px 0;
-}
-
-.profile-info {
-  font-weight: bold;
-  font-family: Arial, sans-serif;
-  font-size: small;
-}
-.profile-info img {
-  width: 48px;
-  padding: 25px;
-
-  border-radius: 48px;
-  border: 3px solid #3c3c3c;
-}
+    border-radius: 48px;
+    border: 3px solid #3c3c3c;
+  }
 </style>
